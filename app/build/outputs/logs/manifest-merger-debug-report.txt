@@ -1,0 +1,339 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c6b0cf4a50dd6af83c1b95da391caebe\transformed\jetified-material3-1.1.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\204288ebb956bc39520fd61362370de4\transformed\jetified-activity-1.8.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bda38777f9ab865006b3569e0abd75b8\transformed\jetified-activity-ktx-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec724898b3af138ba4e6fdfbfe1a8053\transformed\jetified-material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6d4f7c362a1af3ea70cc95860882bd32\transformed\jetified-material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b8ae526a36792d6bc5c49411d3292db8\transformed\jetified-material-icons-extended-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\4d3da02b647e2ac2d4848c1a92b8cf1d\transformed\jetified-material-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\3b38210a32c71c07f9104e2353fa6d6f\transformed\jetified-animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\96a1b96aa67c6f3e973812be6bbb6d52\transformed\jetified-animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\62bc2f77cd00faed426934eaa99dd5cd\transformed\jetified-foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c9fbe156106fd025039c2fc8496322a6\transformed\jetified-foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\09d956b516326d1231642f3ac0894181\transformed\jetified-ui-tooling-data-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\384f4d0e7bfc3e81d3bb05870b4d3bc8\transformed\jetified-ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6f7117ce80ddc4d0ca9464596a315b1a\transformed\jetified-ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\7d702d85847efc1d1ee1cbec1b9b3915\transformed\jetified-ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\079b80c1c839b81139b634a6b026510d\transformed\jetified-ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8717135ad5cf7e295cdae61cf2c8e550\transformed\jetified-ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9ad54baffe60fd8c01c16a521fbef617\transformed\jetified-ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e874c34480cb462aa15a10f9dfefaf7f\transformed\jetified-activity-compose-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f59917f83d86089a78ac3d5e35d5710c\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0ac64e260d75b1e37b310dbc6f7cd651\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e40aa3475ebdd524a3250b6c6d7bea00\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b877d2788d5c10ba22ec57991edeb7d5\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bd998858dccd6fef5d838b63864b0389\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\5b799cb3ce5168d82f2c9b624c10ec70\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1f2d5fe7797bcfb1abce1b8a6a08d1f1\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c10ee76c5c2302c2c8074049a0df82b4\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1634901900a2c8f4d7addc4312d28d36\transformed\jetified-lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac9f22ddb1469dddea4ff2c0876c8aee\transformed\jetified-ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ebae81f77b0050acdc0a572fb7ab44d5\transformed\jetified-autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\17df9ce34968a819096be07f55049778\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\d2747d321b8657acf6064c0d39ab5aba\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\365f0bfc06b6f223aee5ee5d24af4f31\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\07823e72359f721d1e344fff2dcb20cf\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec98e8e22a9b10a11ae7b4a46c727bb8\transformed\jetified-runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac2d3558de2ac52d4dbaa34c93436ff1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\238b2cb2a58b27f0025ad54e1e9e74c4\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f93305d5dfcf2eb37cfc930d2984e059\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8a70f921d66981ed681d3d6945f4028a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:4:5-75
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:4:22-72
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:5:22-75
+application
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:5-36:19
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:5-36:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac2d3558de2ac52d4dbaa34c93436ff1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac2d3558de2ac52d4dbaa34c93436ff1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:9:9-41
+	android:allowBackup
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:11:9-51
+activity#com.callcompanion.MainActivity
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:13:9-21:20
+	android:exported
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:15:13-36
+	android:theme
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:16:13-55
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:14:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.callcompanion.PostCallActivity
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:23:9-26:70
+	android:exported
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:26:13-67
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:24:13-45
+receiver#com.callcompanion.CallReceiver
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:exported
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.PHONE_STATE
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:31:13-33:29
+action#android.intent.action.PHONE_STATE
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:32:25-73
+uses-sdk
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c6b0cf4a50dd6af83c1b95da391caebe\transformed\jetified-material3-1.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c6b0cf4a50dd6af83c1b95da391caebe\transformed\jetified-material3-1.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\204288ebb956bc39520fd61362370de4\transformed\jetified-activity-1.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\204288ebb956bc39520fd61362370de4\transformed\jetified-activity-1.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bda38777f9ab865006b3569e0abd75b8\transformed\jetified-activity-ktx-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bda38777f9ab865006b3569e0abd75b8\transformed\jetified-activity-ktx-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec724898b3af138ba4e6fdfbfe1a8053\transformed\jetified-material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec724898b3af138ba4e6fdfbfe1a8053\transformed\jetified-material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6d4f7c362a1af3ea70cc95860882bd32\transformed\jetified-material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6d4f7c362a1af3ea70cc95860882bd32\transformed\jetified-material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b8ae526a36792d6bc5c49411d3292db8\transformed\jetified-material-icons-extended-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b8ae526a36792d6bc5c49411d3292db8\transformed\jetified-material-icons-extended-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\4d3da02b647e2ac2d4848c1a92b8cf1d\transformed\jetified-material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\4d3da02b647e2ac2d4848c1a92b8cf1d\transformed\jetified-material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\3b38210a32c71c07f9104e2353fa6d6f\transformed\jetified-animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\3b38210a32c71c07f9104e2353fa6d6f\transformed\jetified-animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\96a1b96aa67c6f3e973812be6bbb6d52\transformed\jetified-animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\96a1b96aa67c6f3e973812be6bbb6d52\transformed\jetified-animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\62bc2f77cd00faed426934eaa99dd5cd\transformed\jetified-foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\62bc2f77cd00faed426934eaa99dd5cd\transformed\jetified-foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c9fbe156106fd025039c2fc8496322a6\transformed\jetified-foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c9fbe156106fd025039c2fc8496322a6\transformed\jetified-foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\09d956b516326d1231642f3ac0894181\transformed\jetified-ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\09d956b516326d1231642f3ac0894181\transformed\jetified-ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\384f4d0e7bfc3e81d3bb05870b4d3bc8\transformed\jetified-ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\384f4d0e7bfc3e81d3bb05870b4d3bc8\transformed\jetified-ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6f7117ce80ddc4d0ca9464596a315b1a\transformed\jetified-ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\6f7117ce80ddc4d0ca9464596a315b1a\transformed\jetified-ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\7d702d85847efc1d1ee1cbec1b9b3915\transformed\jetified-ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\7d702d85847efc1d1ee1cbec1b9b3915\transformed\jetified-ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\079b80c1c839b81139b634a6b026510d\transformed\jetified-ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\079b80c1c839b81139b634a6b026510d\transformed\jetified-ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8717135ad5cf7e295cdae61cf2c8e550\transformed\jetified-ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8717135ad5cf7e295cdae61cf2c8e550\transformed\jetified-ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9ad54baffe60fd8c01c16a521fbef617\transformed\jetified-ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9ad54baffe60fd8c01c16a521fbef617\transformed\jetified-ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e874c34480cb462aa15a10f9dfefaf7f\transformed\jetified-activity-compose-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e874c34480cb462aa15a10f9dfefaf7f\transformed\jetified-activity-compose-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f59917f83d86089a78ac3d5e35d5710c\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f59917f83d86089a78ac3d5e35d5710c\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0ac64e260d75b1e37b310dbc6f7cd651\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0ac64e260d75b1e37b310dbc6f7cd651\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e40aa3475ebdd524a3250b6c6d7bea00\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\e40aa3475ebdd524a3250b6c6d7bea00\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b877d2788d5c10ba22ec57991edeb7d5\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\b877d2788d5c10ba22ec57991edeb7d5\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bd998858dccd6fef5d838b63864b0389\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bd998858dccd6fef5d838b63864b0389\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\5b799cb3ce5168d82f2c9b624c10ec70\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\5b799cb3ce5168d82f2c9b624c10ec70\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1f2d5fe7797bcfb1abce1b8a6a08d1f1\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1f2d5fe7797bcfb1abce1b8a6a08d1f1\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c10ee76c5c2302c2c8074049a0df82b4\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c10ee76c5c2302c2c8074049a0df82b4\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1634901900a2c8f4d7addc4312d28d36\transformed\jetified-lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1634901900a2c8f4d7addc4312d28d36\transformed\jetified-lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac9f22ddb1469dddea4ff2c0876c8aee\transformed\jetified-ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac9f22ddb1469dddea4ff2c0876c8aee\transformed\jetified-ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ebae81f77b0050acdc0a572fb7ab44d5\transformed\jetified-autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ebae81f77b0050acdc0a572fb7ab44d5\transformed\jetified-autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\17df9ce34968a819096be07f55049778\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\17df9ce34968a819096be07f55049778\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\d2747d321b8657acf6064c0d39ab5aba\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\d2747d321b8657acf6064c0d39ab5aba\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\365f0bfc06b6f223aee5ee5d24af4f31\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\365f0bfc06b6f223aee5ee5d24af4f31\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\07823e72359f721d1e344fff2dcb20cf\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\07823e72359f721d1e344fff2dcb20cf\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec98e8e22a9b10a11ae7b4a46c727bb8\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ec98e8e22a9b10a11ae7b4a46c727bb8\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac2d3558de2ac52d4dbaa34c93436ff1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\ac2d3558de2ac52d4dbaa34c93436ff1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\238b2cb2a58b27f0025ad54e1e9e74c4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\238b2cb2a58b27f0025ad54e1e9e74c4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f93305d5dfcf2eb37cfc930d2984e059\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\f93305d5dfcf2eb37cfc930d2984e059\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8a70f921d66981ed681d3d6945f4028a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\8a70f921d66981ed681d3d6945f4028a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ganap\.gradle\caches\8.11.1\transforms\9b9a44ca3b9c2381d4a5d0e7079c3a49\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+permission#com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+uses-permission#com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
