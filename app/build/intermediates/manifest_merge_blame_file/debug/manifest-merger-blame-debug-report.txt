@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.callcompanion"
-4    android:versionCode="2"
-5    android:versionName="1.0.2" >
+4    android:versionCode="3"
+5    android:versionName="1.0.3" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
@@ -14,156 +14,171 @@
 12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 12-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:5:5-78
 12-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:5:22-75
-13
-14    <permission
-14-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-15        android:name="com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-17
-18    <uses-permission android:name="com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-19
-20    <application
-20-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:5-38:19
-21        android:allowBackup="true"
-21-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-23        android:debuggable="true"
-24        android:extractNativeLibs="false"
-25        android:icon="@mipmap/ic_launcher"
-25-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:9:9-43
-26        android:label="@string/app_name"
-26-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:9-41
-27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:11:9-54
-28        android:supportsRtl="true"
-28-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:12:9-35
-29        android:theme="@style/Theme.CallCompanion" >
-29-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:13:9-51
-30        <activity
-30-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="com.callcompanion.MainActivity"
-31-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:16:13-41
-32            android:exported="true"
-32-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:17:13-36
-33            android:theme="@style/Theme.CallCompanion" >
-33-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:18:13-55
-34            <intent-filter>
-34-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:19:13-22:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:20:17-69
-35-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:20:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:21:17-77
-37-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:21:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:25:9-28:70
-41            android:name="com.callcompanion.PostCallActivity"
-41-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:26:13-45
-42            android:exported="false"
-42-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:27:13-37
-43            android:theme="@style/Theme.CallCompanion.Translucent" />
-43-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:28:13-67
-44
-45        <receiver
-45-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:30:9-36:20
-46            android:name="com.callcompanion.CallReceiver"
-46-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:31:13-41
-47            android:exported="true" >
-47-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:32:13-36
-48            <intent-filter>
-48-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:33:13-35:29
-49                <action android:name="android.intent.action.PHONE_STATE" />
-49-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:34:17-76
-49-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:34:25-73
-50            </intent-filter>
-51        </receiver>
-52
-53        <activity
-53-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:23:9-25:39
-54            android:name="androidx.activity.ComponentActivity"
-54-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:24:13-63
-55            android:exported="true" />
-55-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:25:13-36
-56        <activity
-56-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
-57            android:name="androidx.compose.ui.tooling.PreviewActivity"
-57-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
-58            android:exported="true" />
-58-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+13    <uses-permission
+13-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:6:5-107
+14        android:name="android.permission.READ_EXTERNAL_STORAGE"
+14-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:6:22-77
+15        android:maxSdkVersion="32" />
+15-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:6:78-104
+16    <uses-permission
+16-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:5-108
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:22-78
+18        android:maxSdkVersion="32" />
+18-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:7:79-105
+19    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+19-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:5-75
+19-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:22-72
+20
+21    <permission
+21-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+22        android:name="com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.callcompanion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:5-41:19
+28        android:allowBackup="true"
+28-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:11:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.12.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\0df6de494b88c1b06f827e7194ad6870\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:12:9-43
+33        android:label="@string/app_name"
+33-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:13:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:14:9-54
+35        android:supportsRtl="true"
+35-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:15:9-35
+36        android:theme="@style/Theme.CallCompanion" >
+36-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:16:9-51
+37        <activity
+37-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:18:9-26:20
+38            android:name="com.callcompanion.MainActivity"
+38-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:19:13-41
+39            android:exported="true"
+39-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:20:13-36
+40            android:theme="@style/Theme.CallCompanion" >
+40-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:21:13-55
+41            <intent-filter>
+41-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:22:13-25:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:23:17-69
+42-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:23:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:24:17-77
+44-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:24:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:28:9-31:70
+48            android:name="com.callcompanion.PostCallActivity"
+48-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:29:13-45
+49            android:exported="false"
+49-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:30:13-37
+50            android:theme="@style/Theme.CallCompanion.Translucent" />
+50-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:31:13-67
+51
+52        <receiver
+52-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:33:9-39:20
+53            android:name="com.callcompanion.CallReceiver"
+53-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:34:13-41
+54            android:exported="true" >
+54-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:35:13-36
+55            <intent-filter>
+55-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:36:13-38:29
+56                <action android:name="android.intent.action.PHONE_STATE" />
+56-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:37:17-76
+56-->C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:37:25-73
+57            </intent-filter>
+58        </receiver>
 59
-60        <provider
-60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-61            android:name="androidx.startup.InitializationProvider"
-61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-62            android:authorities="com.callcompanion.androidx-startup"
-62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-63            android:exported="false" >
-63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-64            <meta-data
-64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-66                android:value="androidx.startup" />
-66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-67            <meta-data
-67-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-68-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-69                android:value="androidx.startup" />
-69-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-70            <meta-data
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-72                android:value="androidx.startup" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-73        </provider>
-74
-75        <receiver
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-76            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-77            android:directBootAware="false"
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-78            android:enabled="true"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-79            android:exported="true"
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-80            android:permission="android.permission.DUMP" >
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-82                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-85                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-88                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-89            </intent-filter>
-90            <intent-filter>
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-91                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-92            </intent-filter>
-93        </receiver>
-94    </application>
-95
-96</manifest>
+60        <activity
+60-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:23:9-25:39
+61            android:name="androidx.activity.ComponentActivity"
+61-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:24:13-63
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:25:13-36
+63        <activity
+63-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+64            android:name="androidx.compose.ui.tooling.PreviewActivity"
+64-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+65            android:exported="true" />
+65-->[androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+69            android:authorities="com.callcompanion.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1b9a7dcf3e9636cb015d2820c99621b9\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\add05272b24c6c9a36e0ef252649b1ee\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+79                android:value="androidx.startup" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+80        </provider>
+81
+82        <receiver
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+84            android:directBootAware="false"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+85            android:enabled="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+86            android:exported="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\1a718cfa32b1d6d50328c4dd97ac802c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>
