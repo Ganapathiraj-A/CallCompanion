@@ -25,11 +25,14 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
 import com.callcompanion.ui.theme.CallCompanionTheme
 import com.callcompanion.ui.theme.OrangePrimary
 import com.callcompanion.ui.theme.OrangeSecondary
@@ -53,23 +56,58 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     val context = LocalContext.current
-    var hasPhonePermission by remember {
-        mutableStateOf(
-            ContextCompat.checkSelfPermission(
-                context,
-                Manifest.permission.READ_PHONE_STATE
-            ) == PackageManager.PERMISSION_GRANTED
-        )
+    val lifecycleOwner = LocalLifecycleOwner.current
+
+    val storagePermission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        Manifest.permission.READ_MEDIA_AUDIO
+    } else {
+        Manifest.permission.READ_EXTERNAL_STORAGE
     }
 
-    var hasOverlayPermission by remember {
-        mutableStateOf(Settings.canDrawOverlays(context))
+    var hasPhonePermission by remember { mutableStateOf(false) }
+    var hasOverlayPermission by remember { mutableStateOf(false) }
+    var hasStoragePermission by remember { mutableStateOf(false) }
+
+    val updatePermissions = {
+        hasPhonePermission = ContextCompat.checkSelfPermission(
+            context, Manifest.permission.READ_PHONE_STATE
+        ) == PackageManager.PERMISSION_GRANTED
+        
+        hasOverlayPermission = Settings.canDrawOverlays(context)
+        
+        hasStoragePermission = ContextCompat.checkSelfPermission(
+            context, storagePermission
+        ) == PackageManager.PERMISSION_GRANTED
     }
 
-    val launcher = rememberLauncherForActivityResult(
+    // Initial check
+    LaunchedEffect(Unit) {
+        updatePermissions()
+    }
+
+    // Lifecycle observer to detect return from settings
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
+                updatePermissions()
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
+        }
+    }
+
+    val phoneLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { isGranted ->
         hasPhonePermission = isGranted
+    }
+
+    val storageLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { isGranted ->
+        hasStoragePermission = isGranted
     }
 
     Column(
@@ -145,7 +183,7 @@ fun MainScreen() {
                 PermissionItem(
                     title = "Phone State",
                     isGranted = hasPhonePermission,
-                    onClick = { launcher.launch(Manifest.permission.READ_PHONE_STATE) }
+                    onClick = { phoneLauncher.launch(Manifest.permission.READ_PHONE_STATE) }
                 )
 
                 Spacer(modifier = Modifier.height(16.dp))
@@ -164,22 +202,10 @@ fun MainScreen() {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                val storagePermission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                    Manifest.permission.READ_MEDIA_AUDIO
-                } else {
-                    Manifest.permission.READ_EXTERNAL_STORAGE
-                }
-
-                var hasStoragePermission by remember {
-                    mutableStateOf(
-                        ContextCompat.checkSelfPermission(context, storagePermission) == PackageManager.PERMISSION_GRANTED
-                    )
-                }
-
                 PermissionItem(
                     title = "Storage (for Audio)",
                     isGranted = hasStoragePermission,
-                    onClick = { launcher.launch(storagePermission) }
+                    onClick = { storageLauncher.launch(storagePermission) }
                 )
             }
         }
@@ -244,7 +270,7 @@ fun MainScreen() {
         Spacer(modifier = Modifier.weight(1f))
         
         Text(
-            text = "Version 1.0.0",
+            text = "Version 1.0.2",
             style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
         )
