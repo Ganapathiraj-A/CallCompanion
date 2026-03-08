@@ -14,7 +14,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
@@ -111,180 +114,203 @@ fun MainScreen() {
         hasStoragePermission = isGranted
     }
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        // Header
-        Spacer(modifier = Modifier.height(40.dp))
-        Box(
+    val scrollState = rememberScrollState()
+    val scope = rememberCoroutineScope()
+
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column(
             modifier = Modifier
-                .size(100.dp)
-                .clip(RoundedCornerShape(24.dp))
-                .background(Color.White),
-            contentAlignment = Alignment.Center
+                .fillMaxSize()
+                .verticalScroll(scrollState)
+                .padding(horizontal = 24.dp, vertical = 16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Image(
-                painter = painterResource(id = R.mipmap.ic_launcher),
-                contentDescription = "App Icon",
-                modifier = Modifier.size(80.dp)
-            )
-        }
-
-        Spacer(modifier = Modifier.height(24.dp))
-        Text(
-            text = "Call Companion",
-            style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.ExtraBold,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-        Text(
-            text = "Your smart post-call assistant",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.7f)
-        )
-
-        Spacer(modifier = Modifier.height(48.dp))
-
-        // Permissions Card
-        Card(
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(24.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = MaterialTheme.colorScheme.surface
-            ),
-            elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
-        ) {
-            Column(
-                modifier = Modifier.padding(24.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+            // Header
+            Spacer(modifier = Modifier.height(40.dp))
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .clip(RoundedCornerShape(24.dp))
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
             ) {
-                Text(
-                    text = "Requirements",
-                    style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.Bold
-                )
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    text = "Enable these to help the companion appear after your calls.",
-                    style = MaterialTheme.typography.bodySmall,
-                    textAlign = TextAlign.Center,
-                    color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
-                )
-
-                Spacer(modifier = Modifier.height(24.dp))
-
-                PermissionItem(
-                    title = "Phone State",
-                    isGranted = hasPhonePermission,
-                    onClick = { phoneLauncher.launch(Manifest.permission.READ_PHONE_STATE) }
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                PermissionItem(
-                    title = "Overlay Permission",
-                    isGranted = hasOverlayPermission,
-                    onClick = {
-                        val intent = Intent(
-                            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                            Uri.parse("package:${context.packageName}")
-                        )
-                        context.startActivity(intent)
-                    }
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                PermissionItem(
-                    title = "Storage (for Audio)",
-                    isGranted = hasStoragePermission,
-                    onClick = { storageLauncher.launch(storagePermission) }
+                Image(
+                    painter = painterResource(id = R.mipmap.ic_launcher),
+                    contentDescription = "App Icon",
+                    modifier = Modifier.size(80.dp)
                 )
             }
-        }
 
-        Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(24.dp))
+            Text(
+                text = "Call Companion",
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.ExtraBold,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+            Text(
+                text = "Your smart post-call assistant",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.7f)
+            )
 
-        // Share Settings Card
-        val settingsManager = remember { SettingsManager(context) }
-        var shareText by remember { mutableStateOf(settingsManager.getShareText()) }
-        var videoLink by remember { mutableStateOf(settingsManager.getVideoLink()) }
-        var recordingPath by remember { mutableStateOf(settingsManager.getRecordingPath()) }
+            Spacer(modifier = Modifier.height(48.dp))
 
-        Card(
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(24.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = MaterialTheme.colorScheme.surface
-            ),
-            elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
-        ) {
-            Column(
-                modifier = Modifier.padding(24.dp),
-                horizontalAlignment = Alignment.Start
+            // Permissions Card
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(24.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
             ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.Settings, contentDescription = null, tint = OrangePrimary, modifier = Modifier.size(20.dp))
-                    Spacer(modifier = Modifier.width(8.dp))
+                Column(
+                    modifier = Modifier.padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Text(
-                        text = "Share Configuration",
-                        style = MaterialTheme.typography.titleMedium,
+                        text = "Requirements",
+                        style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold
                     )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = "Enable these to help the companion appear after your calls.",
+                        style = MaterialTheme.typography.bodySmall,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
+                    )
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    PermissionItem(
+                        title = "Phone State",
+                        isGranted = hasPhonePermission,
+                        onClick = { phoneLauncher.launch(Manifest.permission.READ_PHONE_STATE) }
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    PermissionItem(
+                        title = "Overlay Permission",
+                        isGranted = hasOverlayPermission,
+                        onClick = {
+                            val intent = Intent(
+                                Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                                Uri.parse("package:${context.packageName}")
+                            )
+                            context.startActivity(intent)
+                        }
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    PermissionItem(
+                        title = "Storage (for Audio)",
+                        isGranted = hasStoragePermission,
+                        onClick = { storageLauncher.launch(storagePermission) }
+                    )
                 }
-                
-                Spacer(modifier = Modifier.height(16.dp))
-
-                OutlinedTextField(
-                    value = shareText,
-                    onValueChange = { 
-                        shareText = it
-                        settingsManager.setShareText(it)
-                    },
-                    label = { Text("Default Share Text") },
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp)
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                OutlinedTextField(
-                    value = videoLink,
-                    onValueChange = { 
-                        videoLink = it
-                        settingsManager.setVideoLink(it)
-                    },
-                    label = { Text("Featured Video Link") },
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp)
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                OutlinedTextField(
-                    value = recordingPath,
-                    onValueChange = { 
-                        recordingPath = it
-                        settingsManager.setRecordingPath(it)
-                    },
-                    label = { Text("Recording Folder Path") },
-                    placeholder = { Text("/Recordings/Call") },
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp)
-                )
             }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            // Share Settings Card
+            val settingsManager = remember { SettingsManager(context) }
+            var shareText by remember { mutableStateOf(settingsManager.getShareText()) }
+            var videoLink by remember { mutableStateOf(settingsManager.getVideoLink()) }
+            var recordingPath by remember { mutableStateOf(settingsManager.getRecordingPath()) }
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(24.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(24.dp),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(Icons.Default.Settings, contentDescription = null, tint = OrangePrimary, modifier = Modifier.size(20.dp))
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text(
+                            text = "Share Configuration",
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                    
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    OutlinedTextField(
+                        value = shareText,
+                        onValueChange = { 
+                            shareText = it
+                            settingsManager.setShareText(it)
+                        },
+                        label = { Text("Default Share Text") },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(12.dp)
+                    )
+
+                    Spacer(modifier = Modifier.height(12.dp))
+
+                    OutlinedTextField(
+                        value = videoLink,
+                        onValueChange = { 
+                            videoLink = it
+                            settingsManager.setVideoLink(it)
+                        },
+                        label = { Text("Featured Video Link") },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(12.dp)
+                    )
+
+                    Spacer(modifier = Modifier.height(12.dp))
+
+                    OutlinedTextField(
+                        value = recordingPath,
+                        onValueChange = { 
+                            recordingPath = it
+                            settingsManager.setRecordingPath(it)
+                        },
+                        label = { Text("Recording Folder Path") },
+                        placeholder = { Text("/Recordings/Call") },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(12.dp)
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(48.dp))
+            
+            Text(
+                text = "Version 1.0.8",
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
+            )
+            
+            Spacer(modifier = Modifier.height(16.dp))
         }
 
-        Spacer(modifier = Modifier.weight(1f))
-        
-        Text(
-            text = "Version 1.0.7",
-            style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
-        )
+        // Top-right Settings Shortcut
+        IconButton(
+            onClick = {
+                scope.launch {
+                    scrollState.animateScrollTo(scrollState.maxValue)
+                }
+            },
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(16.dp)
+                .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.5f), CircleShape)
+        ) {
+            Icon(Icons.Default.Settings, contentDescription = "Settings", tint = OrangePrimary)
+        }
     }
 }
 
