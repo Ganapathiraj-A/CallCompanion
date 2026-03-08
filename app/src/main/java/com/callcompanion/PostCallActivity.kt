@@ -39,8 +39,13 @@ class PostCallActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Ensure white status bar text for the dark background dim
-        window.statusBarColor = android.graphics.Color.TRANSPARENT
+        try {
+            // Safe attempt to ensure white status bar text for the dark background dim
+            window.statusBarColor = android.graphics.Color.TRANSPARENT
+        } catch (e: Exception) {
+            // Ignore if the window doesn't support it (e.g. floating translucent)
+            e.printStackTrace()
+        }
 
         setContent {
             CallCompanionTheme {
@@ -215,7 +220,7 @@ fun PostCallScreen(onDismiss: () -> Unit, onAction: (String) -> Unit) {
 
                      Spacer(modifier = Modifier.height(16.dp))
                     Text(
-                        text = "Version 1.0.5",
+                        text = "Version 1.1.3",
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.3f)
                     )
