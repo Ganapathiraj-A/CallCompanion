@@ -11,6 +11,7 @@ import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
+import androidx.activity.compose.BackHandler
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.*
 import androidx.compose.foundation.Image
@@ -78,12 +79,18 @@ fun AppNavigation() {
                 onNavigateSettings = { currentScreen = Screen.SETTINGS },
                 onNavigateRequirements = { currentScreen = Screen.REQUIREMENTS }
             )
-            Screen.SETTINGS -> SettingsScreen(
-                onBack = { currentScreen = Screen.MAIN }
-            )
-            Screen.REQUIREMENTS -> RequirementsScreen(
-                onBack = { currentScreen = Screen.MAIN }
-            )
+            Screen.SETTINGS -> {
+                BackHandler { currentScreen = Screen.MAIN }
+                SettingsScreen(
+                    onBack = { currentScreen = Screen.MAIN }
+                )
+            }
+            Screen.REQUIREMENTS -> {
+                BackHandler { currentScreen = Screen.MAIN }
+                RequirementsScreen(
+                    onBack = { currentScreen = Screen.MAIN }
+                )
+            }
         }
     }
 }
