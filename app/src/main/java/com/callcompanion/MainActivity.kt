@@ -281,7 +281,7 @@ fun MainScreen() {
         Spacer(modifier = Modifier.weight(1f))
         
         Text(
-            text = "Version 1.0.5",
+            text = "Version 1.0.7",
             style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
         )
