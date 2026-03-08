@@ -143,7 +143,7 @@ fun MainScreen() {
                 tonalElevation = 1.dp
             ) {
                 Text(
-                    text = "Version 1.0.9",
+                    text = "Version 1.1.0",
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 12.dp),
@@ -162,6 +162,21 @@ fun MainScreen() {
                 .padding(horizontal = 24.dp, vertical = 8.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // Version Badge
+            Surface(
+                color = OrangePrimary,
+                shape = RoundedCornerShape(16.dp),
+                modifier = Modifier.padding(vertical = 8.dp)
+            ) {
+                Text(
+                    "RELEASE 1.1.0",
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 10.sp,
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+                )
+            }
+
             // Header Image
             Box(
                 modifier = Modifier
