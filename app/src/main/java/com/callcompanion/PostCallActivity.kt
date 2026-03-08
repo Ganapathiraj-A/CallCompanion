@@ -1,7 +1,9 @@
 package com.callcompanion
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.*
@@ -26,10 +28,12 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.content.FileProvider
 import com.callcompanion.ui.theme.CallCompanionTheme
 import com.callcompanion.ui.theme.OrangePrimary
 import com.callcompanion.ui.theme.OrangeSecondary
 import kotlinx.coroutines.delay
+import java.io.File
 
 class PostCallActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,22 +57,60 @@ class PostCallActivity : ComponentActivity() {
 
     private fun handleAction(type: String) {
         val settingsManager = SettingsManager(this)
-        val text = when (type) {
-            "text" -> settingsManager.getShareText()
-            "video" -> settingsManager.getVideoLink()
-            "audio" -> {
-                android.widget.Toast.makeText(this, "Searching for latest call recording...", android.widget.Toast.LENGTH_SHORT).show()
-                // Placeholder: In a real app, we would scan /Recordings/Call/ for the newest file
-                "Check out my latest call recording (Placeholder)"
-            }
-            else -> ""
+        when (type) {
+            "text" -> shareText(settingsManager.getShareText())
+            "video" -> shareText(settingsManager.getVideoLink())
+            "audio" -> shareAudio(settingsManager.getRecordingPath())
         }
-        
+    }
+
+    private fun shareText(text: String) {
         val intent = Intent(Intent.ACTION_SEND).apply {
             this.type = "text/plain"
             putExtra(Intent.EXTRA_TEXT, text)
         }
         startActivity(Intent.createChooser(intent, "Share via"))
+    }
+
+    private fun shareAudio(folderPath: String) {
+        val root = Environment.getExternalStorageDirectory()
+        val folder = if (folderPath.startsWith("/")) {
+            File(root, folderPath)
+        } else {
+            File(root, "/$folderPath")
+        }
+
+        if (!folder.exists() || !folder.isDirectory) {
+            android.widget.Toast.makeText(this, "Recording folder not found: ${folder.absolutePath}", android.widget.Toast.LENGTH_LONG).show()
+            return
+        }
+
+        val files = folder.listFiles { file -> 
+            file.isFile && (file.extension.lowercase() == "m4a" || file.extension.lowercase() == "mp3" || file.extension.lowercase() == "wav")
+        }
+
+        val latestFile = files?.maxByOrNull { it.lastModified() }
+
+        if (latestFile != null) {
+            try {
+                val uri = FileProvider.getUriForFile(
+                    this,
+                    "com.callcompanion.fileprovider",
+                    latestFile
+                )
+
+                val intent = Intent(Intent.ACTION_SEND).apply {
+                    type = "audio/*"
+                    putExtra(Intent.EXTRA_STREAM, uri)
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+                startActivity(Intent.createChooser(intent, "Share Latest Recording"))
+            } catch (e: Exception) {
+                android.widget.Toast.makeText(this, "Error sharing file: ${e.message}", android.widget.Toast.LENGTH_SHORT).show()
+            }
+        } else {
+            android.widget.Toast.makeText(this, "No recordings found in ${folder.name}", android.widget.Toast.LENGTH_SHORT).show()
+        }
     }
 }
 
@@ -169,6 +211,13 @@ fun PostCallScreen(onDismiss: () -> Unit, onAction: (String) -> Unit) {
                             .clip(CircleShape),
                         color = OrangePrimary,
                         trackColor = Color.LightGray.copy(alpha = 0.3f)
+                    )
+
+                     Spacer(modifier = Modifier.height(16.dp))
+                    Text(
+                        text = "Version 1.0.5",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.3f)
                     )
                 }
             }

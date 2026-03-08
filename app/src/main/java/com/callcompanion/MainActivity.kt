@@ -11,11 +11,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -120,20 +121,15 @@ fun MainScreen() {
         Spacer(modifier = Modifier.height(40.dp))
         Box(
             modifier = Modifier
-                .size(80.dp)
-                .clip(RoundedCornerShape(20.dp))
-                .background(
-                    Brush.verticalGradient(
-                        colors = listOf(OrangePrimary, OrangeSecondary)
-                    )
-                ),
+                .size(100.dp)
+                .clip(RoundedCornerShape(24.dp))
+                .background(Color.White),
             contentAlignment = Alignment.Center
         ) {
-            Icon(
-                Icons.Default.Phone,
-                contentDescription = null,
-                tint = Color.White,
-                modifier = Modifier.size(40.dp)
+            Image(
+                painter = painterResource(id = R.mipmap.ic_launcher),
+                contentDescription = "App Icon",
+                modifier = Modifier.size(80.dp)
             )
         }
 
@@ -216,6 +212,7 @@ fun MainScreen() {
         val settingsManager = remember { SettingsManager(context) }
         var shareText by remember { mutableStateOf(settingsManager.getShareText()) }
         var videoLink by remember { mutableStateOf(settingsManager.getVideoLink()) }
+        var recordingPath by remember { mutableStateOf(settingsManager.getRecordingPath()) }
 
         Card(
             modifier = Modifier.fillMaxWidth(),
@@ -264,13 +261,27 @@ fun MainScreen() {
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(12.dp)
                 )
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                OutlinedTextField(
+                    value = recordingPath,
+                    onValueChange = { 
+                        recordingPath = it
+                        settingsManager.setRecordingPath(it)
+                    },
+                    label = { Text("Recording Folder Path") },
+                    placeholder = { Text("/Recordings/Call") },
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(12.dp)
+                )
             }
         }
 
         Spacer(modifier = Modifier.weight(1f))
         
         Text(
-            text = "Version 1.0.4",
+            text = "Version 1.0.5",
             style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
         )

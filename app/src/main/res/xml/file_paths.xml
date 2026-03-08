@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="external_files" path="." />
+    <!-- For newer Android versions, also include root and media paths -->
+    <root-path name="root" path="." />
+</paths>

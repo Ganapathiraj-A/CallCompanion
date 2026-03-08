@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:41:9-49:20
+	android:grantUriPermissions
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:45:13-47
+	android:authorities
+		INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:43:13-64
+	android:exported
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:42:13-62
 manifest
-ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\c6b0cf4a50dd6af83c1b95da391caebe\transformed\jetified-material3-1.1.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\204288ebb956bc39520fd61362370de4\transformed\jetified-activity-1.8.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\ganap\.gradle\caches\8.11.1\transforms\bda38777f9ab865006b3569e0abd75b8\transformed\jetified-activity-ktx-1.8.2\AndroidManifest.xml:2:1-7:12
@@ -83,8 +94,8 @@ ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:5-75
 	android:name
 		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:8:22-72
 application
-ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:5-41:19
-INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:5-41:19
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:5-51:19
+INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:10:5-51:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\78ba0d6dca4b1b9d5185bae80e813b21\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\ganap\.gradle\caches\8.11.1\transforms\93700dc7e1e7b377d1e44f1ddd2aec42\transformed\jetified-ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -155,6 +166,12 @@ action#android.intent.action.PHONE_STATE
 ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:37:17-76
 	android:name
 		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:37:25-73
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:46:13-48:54
+	android:resource
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:48:17-51
+	android:name
+		ADDED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml:47:17-67
 uses-sdk
 INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Code\Android\CallCompanion\app\src\main\AndroidManifest.xml

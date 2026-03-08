@@ -1,47 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
@@ -52,8 +16,8 @@
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-mdpi_ic_launcher_background.png.flat",
@@ -68,12 +32,12 @@
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
@@ -92,6 +56,10 @@
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
@@ -108,15 +76,11 @@
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.callcompanion.app-merged_res-4:/xml_file_paths.xml.flat",
+        "source": "com.callcompanion.app-main-6:/xml/file_paths.xml"
     },
     {
         "merged": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-merged_res-4:\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ganap\\.gradle\\daemon\\8.11.1\\com.callcompanion.app-main-6:\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "com.callcompanion.app-merged_res-4:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.callcompanion.app-main-6:/mipmap-hdpi/ic_launcher.png"
     }
 ]
