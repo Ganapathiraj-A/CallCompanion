@@ -18,6 +18,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
@@ -37,6 +38,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
+import kotlinx.coroutines.launch
 import com.callcompanion.ui.theme.CallCompanionTheme
 import com.callcompanion.ui.theme.OrangePrimary
 import com.callcompanion.ui.theme.OrangeSecondary
@@ -85,12 +87,10 @@ fun MainScreen() {
         ) == PackageManager.PERMISSION_GRANTED
     }
 
-    // Initial check
     LaunchedEffect(Unit) {
         updatePermissions()
     }
 
-    // Lifecycle observer to detect return from settings
     DisposableEffect(lifecycleOwner) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_RESUME) {
@@ -135,6 +135,23 @@ fun MainScreen() {
                     containerColor = MaterialTheme.colorScheme.background
                 )
             )
+        },
+        bottomBar = {
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                color = MaterialTheme.colorScheme.background,
+                tonalElevation = 1.dp
+            ) {
+                Text(
+                    text = "Version 1.0.9",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 12.dp),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f)
+                )
+            }
         }
     ) { paddingValues ->
         Column(
@@ -311,25 +328,8 @@ fun MainScreen() {
             
             Spacer(modifier = Modifier.height(24.dp))
         }
-    },
-    bottomBar = {
-        Surface(
-            modifier = Modifier.fillMaxWidth(),
-            color = MaterialTheme.colorScheme.background,
-            tonalElevation = 1.dp
-        ) {
-            Text(
-                text = "Version 1.0.9",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(vertical = 12.dp),
-                textAlign = TextAlign.Center,
-                style = MaterialTheme.typography.labelSmall,
-                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f)
-            )
-        }
     }
-)
+}
 
 @Composable
 fun PermissionItem(
