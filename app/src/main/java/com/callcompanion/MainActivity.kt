@@ -143,7 +143,7 @@ fun MainScreen() {
                 tonalElevation = 1.dp
             ) {
                 Text(
-                    text = "Version 1.1.0",
+                    text = "Version 1.1.2",
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 12.dp),
@@ -164,12 +164,12 @@ fun MainScreen() {
         ) {
             // Version Badge
             Surface(
-                color = OrangePrimary,
+                color = Color(0xFF4CAF50), // Vibrant Green
                 shape = RoundedCornerShape(16.dp),
                 modifier = Modifier.padding(vertical = 8.dp)
             ) {
                 Text(
-                    "RELEASE 1.1.0",
+                    "RELEASE 1.1.2 FORCE-UPDATE",
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
                     fontSize = 10.sp,
